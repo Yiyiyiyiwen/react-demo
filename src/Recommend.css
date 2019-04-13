@@ -1,0 +1,8 @@
+.recommend{
+    display: flex;
+    flex-wrap: wrap;
+}
+.reccontainer{
+    width: 70%;
+    margin: 0 auto;
+}

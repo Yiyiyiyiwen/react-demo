@@ -1,0 +1,16 @@
+.guides{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    font-size: 25px;
+}
+.active{
+    border-bottom: 3px solid #d43c33;
+}
+a{
+    text-decoration: none;
+    color: rgb(77, 77, 77);
+}
+.guides a{
+    padding: 10px 15px;
+}

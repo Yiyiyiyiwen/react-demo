@@ -1,0 +1,30 @@
+.container{
+    background: #d43c33;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    position: relative;
+}
+.container span{
+    font-size: 30px;
+    color: white;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+.iconname{
+    height: auto;
+    line-height: 100%;
+}
+.login{
+    position: absolute;
+    right: 5%;
+    
+}
+.login span{
+    color: white;
+    font-size: 18px;
+}
