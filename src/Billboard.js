@@ -29,12 +29,12 @@ class Billboard extends Component {
         }, {
             background: 'linear-gradient(#d14770,#ec5482)'
         }, {
-            background: 'linear-gradient(#4f99e1,#6293e8)'
-        }, {
-            background: 'linear-gradient(#159ab4,#57c9c2)'
-        }, {
-            background: 'linear-gradient(#d14770,#ec5482)'
-        },
+            background: 'linear-gradient(#bc4632,#d37b57)'
+        },  {
+            background: 'linear-gradient(#ef6ca2,#ee7aab)'
+        },{
+            background: 'linear-gradient(#904cc9,#a04ecf)'
+        }
         ]
         let songs = this.state.songs
         let count = 1
@@ -64,8 +64,6 @@ class Billboard extends Component {
                                 )
                             )
                         }
-
-
                     }
 
                     )}

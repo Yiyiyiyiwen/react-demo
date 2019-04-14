@@ -42,9 +42,9 @@ class LoginForm extends React.Component {
         }
         else {
             get(baseurl + "/login?key=" + appkey + "&phone="
-            + username + "&passwd=" + password).then(data => {
-                console.log(data)
-            })
+                + username + "&passwd=" + password).then(data => {
+                    console.log(data)
+                })
             sessionStorage.setItem("username", username);
             this.setState({
                 redirectToReferrer: true,
@@ -52,7 +52,7 @@ class LoginForm extends React.Component {
             console.log("login successfully")
         }
 
-       
+
     }
     render() {
         // from 保存跳转到登录页前的页面路径，用于在登录成功后重定向到原来页面
@@ -72,20 +72,26 @@ class LoginForm extends React.Component {
                     <img src={icon}></img>
                     <Link to="/"><span>网易云音乐</span></Link>
                 </div>
-                <form onSubmit={this.handleSubmit} className="loginform">
-                    <div className="myform">
-                        <div>
-                            <div className="lgname">用户名:<br></br></div>
-                            <input type="text" name="username" value={this.state.username}
-                                onChange={this.handleChange} className="myinput"></input>
-                        </div>
-                        <div>
-                            <div className="lgname">密码:<br></br></div>
-                            <input type="password" name="password" value={this.state.password}
-                                onChange={this.handleChange} className="myinput"></input>
+                <div className="mylogin">
+                    <div className="logincontainer">
+                        <div className="logintitle">
+                            登<br></br>录
+                    </div>
+                        <div className="logincontent">
+                            <form onSubmit={this.handleSubmit} className="loginform">
+                                <div className="myform">
+                                    <div>
+                                        <div className="lgname">用户名:<br></br></div>
+                                        <input type="text" name="username" value={this.state.username}
+                                            onChange={this.handleChange} className="myinput"></input>
+                                    </div>
+                                    <div>
+                                        <div className="lgname">密码:<br></br></div>
+                                        <input type="password" name="password" value={this.state.password}
+                                            onChange={this.handleChange} className="myinput"></input>
 
-                        </div>
-                        {/* <br></br>
+                                    </div>
+                                    {/* <br></br>
                     <label>选择框</label>
                     <select value={this.state.value} onChange={this.handleselectChange}>
                         <option value="react">react</option>
@@ -93,10 +99,17 @@ class LoginForm extends React.Component {
                         <option value="mobx" selected> mobx</option>
                     </select>
                     <br></br> */}
-                        <input type="submit" value="登录" className="loginbtn"></input>
+                                    <input type="submit" value="登录" className="loginbtn"></input>
+                                </div>
+
+                            </form>
+                        </div>
                     </div>
 
-                </form>
+
+                </div>
+
+
 
             </div>
 
