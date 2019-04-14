@@ -25,8 +25,6 @@ Open [http://localhost:3000](http://localhost:3000)
 
 **推荐歌单**
 ---
-本部分数据通过map嵌套循环渲染
-
 ![Reccommend](https://s2.ax1x.com/2019/04/14/AXZCon.png)
 
 **最新音乐**
@@ -35,6 +33,7 @@ Open [http://localhost:3000](http://localhost:3000)
 
 **热歌榜**
 ---
+本部分数据通过map嵌套循环渲染
 ![Hot](https://s2.ax1x.com/2019/04/14/AXZ9ds.png)
 
 
