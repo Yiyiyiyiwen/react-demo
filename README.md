@@ -25,14 +25,14 @@ Open [http://localhost:3000](http://localhost:3000)
 ## 界面介绍
 
 **登录**
-![login](https://imgchr.com/i/AXVzLQ)
+![login](https://s2.ax1x.com/2019/04/14/AXVzLQ.png)
 
 **推荐歌单**
 本部分数据通过map嵌套循环渲染
-![Reccommend](https://imgchr.com/i/AXZCon)
+![Reccommend](https://s2.ax1x.com/2019/04/14/AXZCon.png)
 
 **最新音乐**
-![Newest](https://imgchr.com/i/AXZpZj)
+![Newest](https://s2.ax1x.com/2019/04/14/AXZpZj.png)
 
 **热歌榜**
-![Hot](https://imgchr.com/i/AXZ9ds)
+![Hot](https://s2.ax1x.com/2019/04/14/AXZ9ds.png)
