@@ -8,12 +8,12 @@ class Header extends Component {
         super(props);
         this.handlelogin = this.handlelogin.bind(this)
         this.state = {
-            username:''
+            username: sessionStorage.getItem("username")
         }
     }
 
     handlelogin(){
-        
+       
     }
     render() {
         const { location } = this.props;

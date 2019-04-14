@@ -1,0 +1,33 @@
+.loginform{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+}
+.myform{
+    border: 1px #d43c33 solid;
+    padding: 35px 40px;
+    border-radius: 5px;
+}
+.loginform input{
+    border:0;
+    border-bottom: 1px #d43c33 solid;
+    width: 220px;
+    height: 40px;
+}
+.myinput{
+    background: white!important;
+}
+.loginbtn{
+    background: #d43c33;
+    color: white;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.lgname{
+    margin: 10px 0;
+}

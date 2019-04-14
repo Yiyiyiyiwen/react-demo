@@ -1,0 +1,78 @@
+@font-face {
+    font-family: xwz; /*这里是说明调用来的字体名字*/
+    src: url('../src/font/xwz.ttf'); /*这里是字体文件路径*/
+}
+
+.hotitem{
+    width: 30%;
+    margin: 10px;
+    max-width: 370px;
+}
+
+.hotheader{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+    height: 90px;
+    border: 1px #ccc solid;
+}
+.hotname{
+    display: flex;
+}
+.hotname span{
+    color: white;
+    font-family: xwz;
+}
+.firstname{
+    font-size: 50px;
+    margin-right: 5px;
+}
+.secondname{
+    font-size: 25px;
+}
+.hotheader img{
+    width: 50px;
+    height: 50px;
+}
+.songsitem,.songsactive{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 5px;
+    font-size: 12px;
+}
+.songsactive{
+    background:rgba(216, 213, 213, 0.1);
+}
+.songsleft{
+    display: flex;   
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+.songsauthor{
+    flex-shrink: 0;
+    color: rgb(134, 131, 131);
+}
+.songstatus{
+    margin: 0 5px;
+}
+.up,.down{
+    font-weight: bold;
+}
+.up{
+    color: #cd2929;
+}
+.down{
+    color: #2875ce;
+}
+.grey{
+    color: grey;
+}
+.checkall{
+    background:rgba(216, 213, 213, 0.1);
+    text-align: right;
+    padding: 10px;
+    font-size: 12px;
+    color: rgb(134, 131, 131);
+}

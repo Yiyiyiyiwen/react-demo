@@ -8,6 +8,7 @@ import {
 import PostList from "./PostList";
 import Header from "./header";
 import Guide from "./guide"
+import Hot from "./Hot"
 
 
 
@@ -15,7 +16,7 @@ class Home extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            username: ""
+            username: sessionStorage.getItem("username")
         }
     }
 
@@ -29,7 +30,7 @@ class Home extends Component {
                 <Router>
                     <Guide />
                     <Route exact path="/" component={PostList} />
-                    <Route path="/about" component={About} />
+                    <Route path="/hot" component={Hot} />
                     <Route path="/topics" component={Topics} />
                 </Router>
             </div>
@@ -38,13 +39,6 @@ class Home extends Component {
     }
 }
 
-
-
-const About = () => (
-    <div>
-        <h2>About</h2>
-    </div>
-)
 
 const Topics = ({ match }) => (
     <div>

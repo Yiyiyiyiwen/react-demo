@@ -27,7 +27,7 @@ class Guide extends Component {
             },
             {
                 name:'热歌榜',
-                link:'/about',
+                link:'/hot',
             },
             {
                 name:'搜索',
@@ -51,7 +51,7 @@ class Guide extends Component {
         return (
             <div className = "guides">
                 {list}
-            </div>
+            </div>  
         )
     }
 }
