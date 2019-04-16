@@ -14,7 +14,7 @@ class Billboard extends Component {
         }
     }
     componentDidMount() {
-        get("https://api.apiopen.top/musicRankings").then(data => {
+        get(baseurl+"/musicRankings").then(data => {
             this.setState({
                 songs: data.result
             })
@@ -47,7 +47,7 @@ class Billboard extends Component {
                         <div>
                             <div>
                                 <span className="secondname">{hotmusic.name.slice(1, hotmusic.name.length)}</span>
-                                <span>{hotmusic.bg_color}</span>
+                                <div className="updatetime">{hotmusic.updatetime}</div>
                             </div>
                         </div>
                     </div>

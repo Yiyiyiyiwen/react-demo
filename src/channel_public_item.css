@@ -1,0 +1,10 @@
+.channel_detail img{
+    width: 150px;
+    height: 150px;
+}
+.channel_detail{
+    margin: 10px;
+}
+.channel_detail div{
+    text-align: center;
+}

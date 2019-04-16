@@ -14,7 +14,7 @@ class Hot extends Component{
             {
                 id: 2,
                 name:"新歌榜",
-                updatetime:"4月14日"
+                updatetime:"4月15日"
             },
             {
                 id: 3,
@@ -24,17 +24,17 @@ class Hot extends Component{
             {
                 id: 4,
                 name:"影视金曲榜",
-                updatetime:"4月14日",
+                updatetime:"4月16日",
             },
             {
                 id: 5,
                 name:"经典老歌榜",
-                updatetime:"4月14日"
+                updatetime:"4月16日"
             },
             {
                 id: 6,
                 name:"欧美金曲榜",
-                updatetime:"4月14日"
+                updatetime:"4月18日"
             }]
         };
     }

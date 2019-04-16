@@ -24,8 +24,15 @@
     color: white;
     font-family: xwz;
 }
+.updatetime{
+    color: white;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 3px;
+}
 .firstname{
     font-size: 50px;
+    font-weight: bold;
     margin-right: 5px;
 }
 .secondname{

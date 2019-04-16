@@ -9,6 +9,7 @@ import PostList from "./PostList";
 import Header from "./header";
 import Guide from "./guide"
 import Hot from "./Hot"
+import Broadcasting from "./Broadcasting"
 
 
 
@@ -29,8 +30,10 @@ class Home extends Component {
                 <Header username={username} location={location} />
                 <Router>
                     <Guide />
-                    <Route exact path="/" component={PostList} />
+                    <Route exact path="/abc" component={PostList} />
                     <Route path="/hot" component={Hot} />
+                    {/* <Route path="/broadcast" component={Broadcasting}/> */}
+                    <Route path="/" component={Broadcasting}/>
                     <Route path="/topics" component={Topics} />
                 </Router>
             </div>

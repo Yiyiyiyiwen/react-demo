@@ -1,4 +1,4 @@
-const baseurl = "https://www.apiopen.top"
+const baseurl = "https://api.apiopen.top"
 const appkey = "00d91e8e0cca2b76f515926a36db68f5"
 
 function get(url){

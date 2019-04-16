@@ -23,11 +23,15 @@ class Guide extends Component {
         var guides=[
             {
                 name:'推荐音乐',
-                link:'/',
+                link:'/abc',
             },
             {
                 name:'热歌榜',
                 link:'/hot',
+            },
+            {
+                name:'主播电台',
+                link:'/'
             },
             {
                 name:'搜索',
