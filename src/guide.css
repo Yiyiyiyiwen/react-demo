@@ -4,6 +4,12 @@
     padding: 20px 0;
     font-size: 25px;
 }
+@media screen and (max-width:500px) {
+    .guides span{
+        font-size: 18px;
+        font-weight: bold;
+    }
+}
 .active{
     border-bottom: 3px solid #d43c33;
 }

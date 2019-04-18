@@ -1,0 +1,103 @@
+.header_img img{
+    width: 200px;
+    height: 200px;
+    margin-right: 40px;
+}
+.channel_detail_header{
+    display: flex;
+}
+.dt{
+    background: #cd2929;
+    padding: 4px 6px;
+    color: white;
+    font-size: 10px;
+    margin-right: 10px;
+    border-radius: 3px;
+}
+.channellist_name{
+    font-size: 25px;
+}
+.channel_button{
+    display: flex;
+    margin: 10px 0;
+}
+.header_name{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.button_item img{
+    width: 15px;
+    height:15px;
+    margin-right: 8px;
+}
+.button_item{
+    display: flex;
+    align-items:center;
+    font-size: 13px;
+    padding: 4px 7px;
+    border-radius: 3px;
+    border: 1px solid rgb(219, 216, 216);
+    margin: 0 5px;
+    flex-shrink: 0;
+}
+.channel_detail_content{
+    display: flex;
+    margin-top: 50px;
+}
+.channel_detail_content_item{
+    border: 1px solid #ccc;
+    font-size: 13px;
+    padding: 5px 13px;
+    border-bottom: 0;
+ 
+}
+.unactive{
+    background: white;
+    color: black;
+    margin: 0 5px;
+}
+.channel_selected{
+    color: white;
+    background: #cd2929;
+    border: 1px solid #cd2929;
+}
+.channel_detail_line{
+    background: #cd2929;
+    margin: 0;
+    height: 2px;
+}
+.songlist_item,.songlist_detail,.songlist_infor{
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+.songlist_detail img{
+    width: 50px;
+    height: 50px;
+    margin: 0 5px;
+}
+.songlist_item{
+    justify-content: space-between;
+    margin: 10px 20px;
+    padding: 5px 20px;
+    font-size: 13px;
+}
+.songlist_infor{
+    color: #ccc;
+    text-align: left;
+}
+.channel_active{
+    background: rgba(243, 243, 243, 0.473);
+}
+.songcount{
+    width: 20px;
+}
+.songlists{
+    border-top: 1px solid #ccc;
+    
+}
+.infor_item{
+    margin: 0 8px;
+    color: rgb(116, 114, 114);
+}

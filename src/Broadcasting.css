@@ -10,4 +10,10 @@
 .Channel_public_item{
     display: flex;
     flex-wrap: wrap;
+    
+}
+.Channel_public_item2{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
 }

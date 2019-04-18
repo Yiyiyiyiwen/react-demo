@@ -5,6 +5,18 @@
 .channel_detail{
     margin: 10px;
 }
-.channel_detail div{
+/* .channel_detail div{
     text-align: center;
+} */
+.channel_people{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    margin: 5px 0;
+}
+.channel_people img{
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+    margin-right: 20px;
 }

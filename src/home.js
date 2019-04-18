@@ -10,6 +10,7 @@ import Header from "./header";
 import Guide from "./guide"
 import Hot from "./Hot"
 import Broadcasting from "./Broadcasting"
+import Channel_public_detail from "./Channel_public_detail"
 
 
 
@@ -30,11 +31,12 @@ class Home extends Component {
                 <Header username={username} location={location} />
                 <Router>
                     <Guide />
-                    <Route exact path="/abc" component={PostList} />
+                    <Route exact path="/" component={PostList} />
                     <Route path="/hot" component={Hot} />
-                    {/* <Route path="/broadcast" component={Broadcasting}/> */}
-                    <Route path="/" component={Broadcasting}/>
+                    <Route exact path="/broadcast" component={Broadcasting}/>
+                    <Route path="/broadcast/:id" component={Channel_public_detail} /> 
                     <Route path="/topics" component={Topics} />
+                    
                 </Router>
             </div>
 

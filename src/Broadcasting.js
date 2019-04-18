@@ -64,9 +64,22 @@ class Broadcasting extends Component {
                                     return (
                                         item_public.channellist.map((channellist, index) => {
                                             if (channellist.cate_sname == item.name) {
-                                                console.log(channellist)
+                                                //console.log(channellist)
+                                                const name = channellist.ch_name
+                                                const url = '/broadcast/'+ name
                                                 return (
-                                                    <Channel_public_item channel_detail={channellist} key={channellist.ch_name}></Channel_public_item>
+                                                    //<Link key = {channellist.ch_name} to={url}>
+                                                    <Link key = {channellist.ch_name} to={
+                                                        {
+                                                            pathname:url,
+                                                            state:{ 
+                                                                channellist:channellist,
+                                                                channel_name:name
+                                                            }
+                                                        }
+                                                    }>
+                                                    <Channel_public_item channel_detail={channellist} key={channellist.ch_name} type={1}></Channel_public_item>
+                                                    </Link>
                                                 )
                                             }
                                         }
@@ -82,6 +95,21 @@ class Broadcasting extends Component {
 
                 )}
                 <Toolbar name={name2} />
+                <div className="Channel_public_item2">
+                    {channels_public_details.map((item_public, index) => {
+                        if (item_public.title === name2) {
+                            console.log(name2)
+                            return (
+                                item_public.channellist.map((channellist, index) => 
+                                    <Channel_public_item channel_detail={channellist} key={channellist.ch_name} type={2}></Channel_public_item>
+                                )
+                            )
+                        }
+
+                    }
+
+                    )}
+                </div>
             </div>
 
         )
