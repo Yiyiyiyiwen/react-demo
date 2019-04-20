@@ -6,6 +6,10 @@ React Example
 
 本项目中所有涉及的接口均来自(https://blog.csdn.net/c__chao/article/details/78573737)
 
+## 更新（2019-04-20）
+新增搜索模块
+输入内容可实时搜索到歌名、歌手、热度等信息
+
 ## 更新（2019-04-18）
 新增主播电台模块
 公共频道及频道详情的页面搭建和数据渲染
@@ -47,6 +51,11 @@ Open [http://localhost:3000](http://localhost:3000)
 **电台详情**
 ---
 ![Broadcast_detail](https://s2.ax1x.com/2019/04/18/ESaco4.png)
+
+**搜索**
+---
+![Search](https://s2.ax1x.com/2019/04/20/ECa0uq.png)
+
 **登录**
 ---
 ![login](https://s2.ax1x.com/2019/04/14/AXVzLQ.png)

@@ -1,0 +1,16 @@
+.progress2{
+    width:100px;
+    height: 10px;
+    background: #ccc;
+    position: absolute;
+    border-radius: 20px;
+}
+.progress1{
+    width: 100px;
+    height: 10px;
+    background: #dedede;
+    position: relative;
+    margin: 15px 0;
+    overflow: hidden;
+    border-radius: 20px;
+}

@@ -35,7 +35,7 @@ class Guide extends Component {
             },
             {
                 name:'搜索',
-                link:'/topics',
+                link:'/search',
             }
         ]
         let list = guides.map((item,index) =>{
