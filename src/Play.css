@@ -2,7 +2,17 @@
     width: 100%;
     height: 100%;
     position: absolute;
-    background: #999999;
+    overflow: hidden;
+}
+.bgimg img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    -webkit-filter: blur(5px); /* Chrome, Safari, Opera */
+    filter: blur(5px);
+    -webkit-filter: contrast(60%); /* Chrome, Safari, Opera */
+    filter: contrast(60%);
+    z-index: -1;
 }
 .musiccontainer{
     width: 100%;
@@ -14,7 +24,7 @@
     transform: translateX(-50%);
     width: 180px;
     z-index: 2;
-    transform-origin: -20px 350px;  
+    transform-origin: -20px 360px;  
 }
 .pause-needle {  
     animation: rotate-needle-pause 0.5s 1 normal linear;  
@@ -122,3 +132,71 @@
         opacity: 1;
     }
 }
+
+
+.playaudio{
+    position: absolute;
+    top: 80%;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+}
+
+.process {  
+    width: 800px;  
+    height: 50px;  
+    bottom: 100px;  
+    left: 50%;  
+    font-size: 12px;  
+    display: flex;
+    margin: 0 auto;
+    margin-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;  
+}  
+  
+.process .process-bar {  
+    width:100%;  
+    margin-top: 5px;  
+}  
+
+.cur{
+    background: #B1ADAC;
+    height: 3px;
+    position: relative;
+}
+/* .playaudio audio{
+    display: none;
+} */
+.process-bar .rdy{
+    background: #FB0D0D;
+    height: 3px;
+    width: 100px;
+    position: absolute;
+    z-index:3;
+}
+/* .process-bar .rdy {  
+    background-color: #B1ADAC;  
+    height: 2px;  
+}  
+  
+.process-bar .cur {  
+    background-color: #FB0D0D;  
+    height: 2px;  
+    position: absolute;
+    width:100px;  
+}   */
+#currentTime,#totalTime{
+    margin: 0 10px;
+}
+.cur .process-btn {  
+    cursor: pointer;  
+    background-image: url("./images/process_btn.png");  
+    background-size: cover;  
+    position: absolute;  
+    top: -9px;  
+    width: 22px;  
+    height: 22px;
+    left: 0;  
+    z-index: 4;
+}  
