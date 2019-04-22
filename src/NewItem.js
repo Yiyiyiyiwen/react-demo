@@ -1,10 +1,16 @@
 import React from "react";
 import "./NewItem.css";
 import like from "./images/zan.png"
+import playmusicimg from "./images/playmusic.png"
+import { Link } from "react-router-dom";
 
 function NewItem(props) {
     const handlelike = () => {
         props.onVote(props.newitem.id);
+    };
+
+    const playmusic = () => {
+        console.log("123")
     };
 
     const { newitem } = props
@@ -26,13 +32,15 @@ function NewItem(props) {
                 </div>
 
                 <div className="time">
-                    {newitem.time}
+                    <Link to="/play">
+                        <img src={playmusicimg} width="50px" height="50px" />
+                    </Link>
 
                 </div>
             </div>
 
             <div className="dianzan">
-                <img src={require("./images/"+newitem.imgsrc+".png")} onClick={handlelike}></img>
+                <img src={require("./images/" + newitem.imgsrc + ".png")} onClick={handlelike}></img>
                 {newitem.count}
             </div>
         </div>

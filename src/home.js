@@ -12,6 +12,7 @@ import Hot from "./Hot"
 import Broadcasting from "./Broadcasting"
 import Channel_public_detail from "./Channel_public_detail"
 import SearchBox from "./SearchBox"
+import Play from "./Play.js"
 
 
 class Home extends Component {
@@ -36,7 +37,7 @@ class Home extends Component {
                     <Route exact path="/broadcast" component={Broadcasting}/>
                     <Route path="/broadcast/:id" component={Channel_public_detail} /> 
                     <Route path="/search" component={SearchBox} />
-                    
+                    <Route path = "/play" component={Play}></Route>
                 </Router>
             </div>
 

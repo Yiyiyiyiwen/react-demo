@@ -4,7 +4,7 @@ import logo from './logo.svg';
 import './App.css';
 import Home from "./home.js"
 import LoginForm from "./LoginForm.js"
-
+import Play from "./Play.js"
 
 class App extends Component {
   render() {
@@ -12,8 +12,10 @@ class App extends Component {
       <Router>
         <Switch>
           <Route exact path="/" component={Home}></Route>
+          <Route path = "/play" component={Play}></Route>
           <Route path = "/login" component={LoginForm}></Route>
         </Switch>
+
       </Router>
     );
   }

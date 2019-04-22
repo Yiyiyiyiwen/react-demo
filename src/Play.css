@@ -1,0 +1,124 @@
+.bodycontainer{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #999999;
+}
+.musiccontainer{
+    width: 100%;
+    position: relative;
+}
+.needle{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 180px;
+    z-index: 2;
+    transform-origin: -20px 350px;  
+}
+.pause-needle {  
+    animation: rotate-needle-pause 0.5s 1 normal linear;  
+    animation-fill-mode: forwards;  
+}  
+  
+.resume-needle {  
+    animation: rotate-needle-resume 0.5s 1 normal linear;  
+    animation-fill-mode: forwards;  
+}  
+@keyframes rotate-needle-pause {  
+    100% {  
+        transform: rotate(-10deg);  
+    }  
+}  
+  
+@keyframes rotate-needle-resume {  
+    0% {  
+        transform: rotate(-10deg);  
+    }  
+    100% {  
+        transform: rotate(0deg);  
+    }  
+}  
+.dics{
+    width: 100%;
+    height: 600px;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    display: flex;
+    justify-content: center;
+    transform: translateY(-50%);
+}
+.dicsimg{
+    width: 500px;
+    height: 500px;
+}
+.etc{
+    position: absolute;
+    height: 400px;
+    top: 50px;
+    z-index: -1;
+    border-radius: 100%;
+}
+
+.etctrans{
+    animation: startrotate 15s infinite linear;
+
+}
+@-webkit-keyframes startrotate {
+    0%   {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes startrotate {
+    0%   {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.pausemusic,.pausemusicappear{
+    position: absolute;
+    width: 100px;
+    top: 200px;
+    border-radius: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+.pausemusic {
+    opacity: 0;
+}
+.pausemusicappear{
+    animation: appear 0.3s linear;
+}
+
+@-webkit-keyframes appear {
+    0%   {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes appear {
+    0%   {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
