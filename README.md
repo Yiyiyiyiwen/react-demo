@@ -1,14 +1,20 @@
-React Example
+React_Cloud Music
 ---
 
 入门React
-写一个小的项目练手，界面仿照网易云音乐
+界面仿照网易云音乐
 
 本项目中所有涉及的接口均来自(https://blog.csdn.net/c__chao/article/details/78573737)
 
+## 技术栈
+- react
+- react-router
+- ES6
+- fetch
+
 ## TODO
-· 歌词滚动及高亮显示
-· 歌词进度条拖动
+- 歌词滚动及高亮显示
+- 歌词进度条拖动
 
 ## 更新（2019-04-23）
 新增音乐播放界面
@@ -29,14 +35,13 @@ React Example
 新浪博客：@托马斯回旋火头猪
 
 ## 安装依赖包
-npm install
-
+`npm install`
 
 ## 运行
-npm start
+`npm start`
 
 ## 访问
-Open [http://localhost:3000](http://localhost:3000)
+`Open [http://localhost:3000](http://localhost:3000)`
 
 
 **推荐歌单**
@@ -49,7 +54,6 @@ Open [http://localhost:3000](http://localhost:3000)
 
 **热歌榜**
 ---
-本部分数据通过map嵌套循环渲染
 ![Hot](https://s2.ax1x.com/2019/04/14/AXZ9ds.png)
 
 **主播电台**
@@ -67,6 +71,8 @@ Open [http://localhost:3000](http://localhost:3000)
 **播放歌曲**
 ---
 ![Playmusic](https://s2.ax1x.com/2019/04/24/EVqGIH.png)
+
+![Pausemusic](https://s2.ax1x.com/2019/04/24/EVqIwF.png)
 **登录**
 ---
 ![login](https://s2.ax1x.com/2019/04/14/AXVzLQ.png)
