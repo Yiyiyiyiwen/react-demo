@@ -1,7 +1,6 @@
 import React from "react";
 import "./NewItem.css";
 import like from "./images/zan.png"
-import playmusicimg from "./images/playmusic.png"
 import { Link } from "react-router-dom";
 
 function NewItem(props) {
@@ -32,10 +31,7 @@ function NewItem(props) {
                 </div>
 
                 <div className="time">
-                    <Link to="/play">
-                        <img src={playmusicimg} width="50px" height="50px" />
-                    </Link>
-
+                    <span>{newitem.time}</span>
                 </div>
             </div>
 

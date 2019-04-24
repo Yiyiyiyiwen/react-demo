@@ -4,6 +4,8 @@ import { get } from "./utils/request";
 import { baseurl } from "./utils/request"
 import like from "./images/like.png"
 import Progress from "./Components/Progress.js"
+import playmusicimg from "./images/playmusicimg.png"
+import { Link } from "react-router-dom";
 
 class SearchResult extends Component {
     constructor(props) {
@@ -53,6 +55,17 @@ class SearchResultList extends React.Component {
                     <div className="result_index">{index + 1}</div>
                     <div><img src={like}></img></div>
                     <div className="result_item result_title">{item.title}</div>
+                    <Link to={
+                        {
+                            pathname:'/play',
+                            state:{
+                                text:item.lrc,
+                                songurl:item.url
+                            }
+                        }
+                    }>
+                        <img src={playmusicimg} width="50px" height="50px" className="playmusicimg"/>
+                    </Link>
                     <div className="result_item">{item.author}</div>
                     <div className="progressbar"><Progress allNum={10} percentageNum={random} progressName='小明' /></div>
                 </div>

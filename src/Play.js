@@ -16,23 +16,32 @@ class Play extends Component {
       isMuted: false,
       volume: 100,
       allTime: 285,
-      currentTime: 0
+      currentTime: 0,
+      songurl: ''
     }
     this.handlePlay = this.handlePlay.bind(this);
   }
 
+  componentWillMount() {
+    var songurl = this.props.location.state.songurl
+    this.setState({
+      songurl: songurl
+    })
+  }
   handlePlay() {
     var ifpause = this.state.ifpause
-
+    const audio = document.getElementById(`maudio`)
     if (ifpause) {
       this.setState({
         ifpause: false
       })
+      audio.pause()
     }
     else {
       this.setState({
         ifpause: true
       })
+      audio.play()
     }
     console.log(ifpause)
   }
@@ -94,7 +103,7 @@ class Play extends Component {
         break
     }
   }
-   
+
   millisecondToDate(time) {
     const second = Math.floor(time % 60)
     let minite = Math.floor(time / 60)
@@ -106,16 +115,17 @@ class Play extends Component {
     // }
     return `${minite}:${second >= 10 ? second : `0${second}`}`
   }
-  
+
   render() {
-    const {currentTime,allTime} = this.state
+    const { currentTime, allTime, songurl } = this.state
     var ifpasue = this.state.ifpause
-    const processwidth = 800*(currentTime/allTime)
+
+    const processwidth = 800 * (currentTime / allTime)
     var processbarstyle = {
-      width:processwidth
+      width: processwidth
     }
     var dotstyle = {
-      left:processwidth
+      left: processwidth
     }
     return (
       <div className="bodycontainer">
@@ -134,17 +144,18 @@ class Play extends Component {
         </div>
 
         <div className="playaudio">
-          <audio src="http://music.163.com/song/media/outer/url?id=25906124.mp3" controls="controls" loop="loop" autoplay="autoplay"
+          <audio src={songurl} controls="controls" loop="loop" autoPlay="autoplay"
             onCanPlay={() => this.controlAudio('allTime')}
             onTimeUpdate={(e) => this.controlAudio('getCurrentTime')}
             id="maudio">
             亲 您的浏览器不支持html5的audio标签</audio>
-          <div class="music-content-lrc" >
-            <div class="music-content-lrc-playing" id="lc">
+          <div className="music-content-lrc" >
+            <div className="music-content-lrc-playing" id="lc">
               暂无歌词
             </div>
           </div>
-          <div class="process" id="process">
+         
+          <div className="process" id="process">
             <div id="currentTime">
               <span className="current">
                 {this.millisecondToDate(currentTime)}

@@ -26,7 +26,7 @@ class Home extends Component {
     render() {
         const { username } = this.state;
         const { location, match } = this.props;
-
+        console.log(match.url)
         return (
             <div>
                 <Header username={username} location={location} />

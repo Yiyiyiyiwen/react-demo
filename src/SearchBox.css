@@ -53,3 +53,9 @@
 .result_active{
     background: white;
 }
+.playmusicimg{
+    opacity: 0.3;
+}
+.playmusicimg:hover{
+    opacity: 1;
+}

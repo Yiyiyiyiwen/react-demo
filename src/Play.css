@@ -165,9 +165,9 @@
     height: 3px;
     position: relative;
 }
-/* .playaudio audio{
+.playaudio audio{
     display: none;
-} */
+}
 .process-bar .rdy{
     background: #FB0D0D;
     height: 3px;

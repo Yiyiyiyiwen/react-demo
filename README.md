@@ -6,6 +6,10 @@ React Example
 
 本项目中所有涉及的接口均来自(https://blog.csdn.net/c__chao/article/details/78573737)
 
+## TODO
+· 歌词滚动及高亮显示
+· 歌词进度条拖动
+
 ## 更新（2019-04-23）
 新增音乐播放界面
 完成音乐播放的动效及音乐进度条的实时显示
@@ -60,6 +64,9 @@ Open [http://localhost:3000](http://localhost:3000)
 ---
 ![Search](https://s2.ax1x.com/2019/04/20/ECa0uq.png)
 
+**播放歌曲**
+---
+![Playmusic](https://s2.ax1x.com/2019/04/24/EVqGIH.png)
 **登录**
 ---
 ![login](https://s2.ax1x.com/2019/04/14/AXVzLQ.png)
