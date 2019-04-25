@@ -17,18 +17,19 @@ class SearchResult extends Component {
         };
     }
 
-    componentWillReceiveProps() {
-        //console.log("请求")
-        get(baseurl + "/searchMusic?name=" + this.props.searchText).then(data => {
-            this.setState({ loading: false, data: data.result });
-        })
-    }
+    // componentWillReceiveProps() {
+    //     //console.log("请求")
+    //     get(baseurl + "/searchMusic?name=" + this.props.searchText).then(data => {
+    //         this.setState({ loading: false, data: data.result });
+    //     })
+    // }
 
     render() {
-        if (this.state.data) {
+        var data = this.props.data
+        if (data) {
             return (
                 <div>
-                    <SearchResultList data={this.state.data} />
+                    <SearchResultList data={data} />
                 </div>
             );
 
