@@ -4,7 +4,8 @@ class Lyrics extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            song: []
+            song: [],
+            keys: []
         };
 
 
@@ -13,11 +14,27 @@ class Lyrics extends Component {
 
         var lrc = this.props.lyrics
         var song = this.parseLyric(lrc)
-
+        var result = []
+        var keys = []
+        for (let i in song) {
+            result.push(song[i])
+            keys.push(i)
+        }
+        // var result=[];
+        // for(var i in song){
+        //     if(i==undefined){
+        //         break
+        //     } 
+        //     var tt={};
+        //     tt[i]=song[i];
+        //     result.push(tt)
+        // };
         // console.log(song)
         this.setState({
-            song: song
+            song: result,
+            keys: keys
         })
+
         // var keys = []
         // for (var i in song) {
         //     var txt = song[i]
@@ -68,20 +85,33 @@ class Lyrics extends Component {
 
     render() {
         const { lrc, currentTime } = this.props
-        const song = this.state.song
-        var songarr = []
-        var keys = []
-        for (let i in song) {
-            songarr.push(song[i])
-            keys.push(i)
-        }
-        console.log(Math.ceil(currentTime))
+        const { song, keys } = this.state
+        //console.log(Math.ceil(currentTime))
+        //console.log(keys)
+        let index = keys.findIndex(item => item > Math.floor(currentTime))
+       
+        console.log(index)
         return (
             <div>
                 <ul className="song">
-
+                    {index == -1 ? '' :
+                        (index == 0 || index == 1 || index == 2) ?
+                            (
+                                <div>
+                                    <li className="currentsong">{song[0]}</li>
+                                    <li>{song[1]}</li>
+                                    <li>{song[2]}</li>
+                                </div>
+                            )
+                            :
+                            <div>
+                                    <li className="currentsong">{song[index-1]}</li>
+                                    <li>{song[index]}</li>
+                                    <li>{song[index+1]}</li>
+                            </div>
+                    }
+                    {/* <li>{songarr[keys[currentTime]]}</li>
                     {songarr.map((item, index) => {
-                        console.log(keys[index]+" "+keys[index+1])
                         if(Math.floor(currentTime)>keys[index]&&Math.floor(currentTime)<keys[index+1]){
                             return (
                                 <li className={(Math.floor(currentTime) - keys[index]) < 10 ? "songactive currentsong" : "songunactive"} >{item}</li>
@@ -94,7 +124,7 @@ class Lyrics extends Component {
                         }
                         
                     })
-                    }
+                    } */}
                 </ul>
             </div>
         )
