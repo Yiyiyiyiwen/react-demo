@@ -13,12 +13,12 @@ React_Cloud Music
 - fetch
 
 ## TODO
-- 歌词滚动及高亮显示
 - 歌词进度条拖动
 
-## 更新（2019-04-23）
+## 更新（2019-04-25）
 新增音乐播放界面
-完成音乐播放的动效及音乐进度条的实时显示
+音乐播放的动效及音乐进度条的实时显示
+歌词实时滚动及当前句高亮显示
 
 ## 更新（2019-04-20）
 新增搜索模块
@@ -70,7 +70,7 @@ React_Cloud Music
 
 **播放歌曲**
 ---
-![Playmusic](https://s2.ax1x.com/2019/04/24/EVqGIH.png)
+![Playmusic](https://s2.ax1x.com/2019/04/25/EeygYD.png)
 
 ![Pausemusic](https://s2.ax1x.com/2019/04/24/EVqIwF.png)
 **登录**

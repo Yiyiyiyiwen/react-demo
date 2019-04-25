@@ -4,6 +4,7 @@ import needle from "./images/needle.png"
 import disc from "./images/disc.png"
 import new5 from "./images/new5.png"
 import playmusic from "./images/pp.png"
+import Lyrics from "./Components/Lyrics.js"
 
 class Play extends Component {
 
@@ -17,16 +18,20 @@ class Play extends Component {
       volume: 100,
       allTime: 285,
       currentTime: 0,
-      songurl: ''
+      songurl: '',
+      lrc:''
     }
     this.handlePlay = this.handlePlay.bind(this);
   }
 
   componentWillMount() {
     var songurl = this.props.location.state.songurl
+    var text = this.props.location.state.text
     this.setState({
-      songurl: songurl
+      songurl: songurl,
+      lrc:text
     })
+    console.log(this.state.lrc)
   }
   handlePlay() {
     var ifpause = this.state.ifpause
@@ -151,7 +156,7 @@ class Play extends Component {
             亲 您的浏览器不支持html5的audio标签</audio>
           <div className="music-content-lrc" >
             <div className="music-content-lrc-playing" id="lc">
-              暂无歌词
+              <Lyrics lyrics = {this.state.lrc} currentTime = {currentTime}></Lyrics>
             </div>
           </div>
          

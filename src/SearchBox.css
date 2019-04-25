@@ -20,8 +20,8 @@
     width: 100%;
     margin-left: 10px;
     padding: 0 10px;
-
 }
+
 .result_index{
     width: 15px;
 }
@@ -58,4 +58,24 @@
 }
 .playmusicimg:hover{
     opacity: 1;
+}
+.song li{
+    list-style: none;
+    margin: 8px 0;
+}
+.songunactive{
+    display: none;
+}
+.song{
+    height: 90px;
+    overflow:hidden;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif
+}
+.songactive{
+    display: block;
+}
+.currentsong{
+    color: #d43c33;
+    font-weight: bold;
 }
